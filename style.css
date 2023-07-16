@@ -43,6 +43,10 @@ body {
     background-color: #F1E4E6;
 }
 
+.top__img {
+    width: 50%;
+}
+
 .top__content {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
@@ -72,6 +76,10 @@ body {
 
 .offer__card {
     position: relative;
+}
+
+.offer__img {
+    width: 100%;
 }
 
 .offer__card_big {
@@ -131,7 +139,7 @@ body {
 }
 
 .product__img {
-    height: 420px;
+    width: 100%;
 }
 
 .product__content {
@@ -189,4 +197,18 @@ body {
     border: 1px solid #F26376;
     color: #F26376;
     font-size: 16px;
+}
+
+@media (max-width: 1172px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .products__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
