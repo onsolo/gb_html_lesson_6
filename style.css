@@ -212,3 +212,49 @@ body {
         grid-template-rows: repeat(3, 1fr);
     }
 }
+
+@media (max-width: 767px) {
+    .header__account_img {
+        display: none;
+    }
+
+    .header__card_img {
+        display: none;
+    }
+
+    .top {
+        padding: 148px 56px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .top__img {
+        display: none;
+    }
+
+    .top__heading {
+        font-size: 38px;
+    }
+
+    .top__title {
+        font-size: 22px;
+    }
+
+    .offer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr) 111px;
+    }
+
+    .offer__card_big {
+        grid-column: 1;
+    }
+
+    .offer__img {
+        height: 100%;
+    }
+
+    .products__wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
