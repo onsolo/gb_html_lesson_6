@@ -1,0 +1,7 @@
+@mixin modal {
+  position: absolute;
+  visibility: hidden;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+  z-index: 2;
+  background-color: #fff;
+}

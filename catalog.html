@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <title>Shop - Main</title>
+    <title>Shop - Catalog</title>
 </head>
 <body>
 <div class="header center">
@@ -92,49 +92,88 @@
     </div>
 </div>
 
-<div class="top center">
-    <img class="top__img" src="img/mainBanner.png" alt="Main banner image">
-    <div class="top__content">
-        <div class="top__heading">THE BRAND</div>
-        <div class="top__title">OF LUXURIOUS <span>FASHION</span></div>
+<div class="page_header center">
+    <div class="page_header__title">
+        NEW ARRIVALS
+    </div>
+    <div class="page_header__breadcrumbs">
+        <div class="page_header__breadcrumbs_item">Home</div>
+        <div class="page_header__breadcrumbs_item">Men</div>
+        <div class="page_header__breadcrumbs_item">New Arrivals</div>
     </div>
 </div>
 
-<div class="offer center">
-    <div class="offer__card">
-        <img class="offer__img" src="img/offers/si1.jpg" alt="Offer 1">
-        <div class="offer__content">
-            <div class="offer__subtitle">30% OFF</div>
-            <div class="offer__title">FOR WOMEN</div>
+<div class="catalog_filter center">
+    <div class="catalog_filter__filter_btn">
+        <div class="catalog_filter__filter_btn_title">Filter</div>
+        <img src="img/hamburger.svg" alt="filter">
+
+        <div class="filter_wrapper">
+            <div class="filter_wrapper__title">
+                Filter
+                <img src="img/hamburger.svg" alt="filter">
+            </div>
+
+            <div class="filter_wrapper__category_title">
+                CATEGORY
+            </div>
+            <ul class="filter_wrapper__category_list">
+                <li>Accessories</li>
+                <li>Bags</li>
+                <li>Denim</li>
+                <li>Hoodies & Sweatshirts</li>
+                <li>Jackets & Coats</li>
+                <li>Polos</li>
+                <li>Shirts</li>
+                <li>Shoes</li>
+                <li>Sweaters & Knits</li>
+                <li>T-Shirts</li>
+                <li>Tanks</li>
+            </ul>
+            <div class="filter_wrapper__category_title">
+                BRAND
+            </div>
+            <div class="filter_wrapper__category_title">
+                DESIGNER
+            </div>
         </div>
     </div>
-    <div class="offer__card">
-        <img class="offer__img" src="img/offers/si2.jpg" alt="Offer 2">
-        <div class="offer__content">
-            <div class="offer__subtitle">HOT DEAL</div>
-            <div class="offer__title">FOR MEN</div>
+    <div class="catalog_filter__sort">
+        <div class="catalog_filter__sort_item">
+            TRENDING NOW
+            <img src="img/chevron-down.svg" alt="arrow down">
         </div>
-    </div>
-    <div class="offer__card">
-        <img class="offer__img" src="img/offers/si3.jpg" alt="Offer 2">
-        <div class="offer__content">
-            <div class="offer__subtitle">NEW ARRIVALS</div>
-            <div class="offer__title">FOR KIDS</div>
+        <div id="sort-size" class="catalog_filter__sort_item">
+            SIZE
+            <img src="img/chevron-down.svg" alt="arrow down">
+
+            <div class="size_modal">
+                <div class="size_modal__input">
+                    <input id="xs" type="checkbox">
+                    <label for="xs">XS</label>
+                </div>
+                <div class="size_modal__input">
+                    <input id="s" type="checkbox">
+                    <label for="s">S</label>
+                </div>
+                <div class="size_modal__input">
+                    <input id="m" type="checkbox">
+                    <label for="m">M</label>
+                </div>
+                <div class="size_modal__input">
+                    <input id="l" type="checkbox">
+                    <label for="l">L</label>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="offer__card offer__card_big">
-        <img class="offer__img" src="img/offers/sibig.jpg" alt="Offer 2">
-        <div class="offer__content">
-            <div class="offer__subtitle">LUXURIOUS & TRENDY</div>
-            <div class="offer__title">ACCESSORIES</div>
+        <div class="catalog_filter__sort_item">
+            PRICE
+            <img src="img/chevron-down.svg" alt="arrow down">
         </div>
     </div>
 </div>
 
-<div class="products center">
-    <div class="products__title">Featured Items</div>
-    <div class="products__subtitle">Shop for items based on what we featured in this week</div>
-
+<div class="catalog center">
     <div class="products__wrapper">
         <div class="product__card">
             <div class="product__img_wrapper">
@@ -262,12 +301,70 @@
                 <div class="product__price">$52.00</div>
             </div>
         </div>
+        <div class="product__card">
+            <div class="product__img_wrapper">
+                <img src="img/products/product4.png" alt="Product 4" class="product__img">
+                <div class="product__hover_item">
+                    <div class="product__hover_content">
+                        <a class="btn btn__secondary_outline">
+                            <img src="img/cart.svg" alt="cart">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product__content">
+                <a href="#" class="product__title">ELLERY X M'O CAPSULE</a>
+                <div class="product__description">
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                    Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product__price">$52.00</div>
+            </div>
+        </div>
+        <div class="product__card">
+            <div class="product__img_wrapper">
+                <img src="img/products/product5.png" alt="Product 5" class="product__img">
+                <div class="product__hover_item">
+                    <div class="product__hover_content">
+                        <a class="btn btn__secondary_outline">
+                            <img src="img/cart.svg" alt="cart">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product__content">
+                <a href="#" class="product__title">ELLERY X M'O CAPSULE</a>
+                <div class="product__description">
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                    Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product__price">$52.00</div>
+            </div>
+        </div>
+        <div class="product__card">
+            <div class="product__img_wrapper">
+                <img src="img/products/product6.png" alt="Product 6" class="product__img">
+                <div class="product__hover_item">
+                    <div class="product__hover_content">
+                        <a class="btn btn__secondary_outline">
+                            <img src="img/cart.svg" alt="cart">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product__content">
+                <a href="#" class="product__title">ELLERY X M'O CAPSULE</a>
+                <div class="product__description">
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                    Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product__price">$52.00</div>
+            </div>
+        </div>
     </div>
-
-    <div class="products__btn_wrapper">
-        <a href="catalog.html" class="btn btn__primary_outline">Browse All Product</a>
-    </div>
-
 </div>
 
 <div class="permissions center">
@@ -343,6 +440,5 @@
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
